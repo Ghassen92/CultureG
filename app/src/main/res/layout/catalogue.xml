@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg"
+    tools:context=".CatalogueActivity"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:dividerPadding="15dp"
+        android:showDividers="middle"
+        android:divider="@drawable/empty_tall_divider">
+        <LinearLayout
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/categorie_bg"
+            android:id="@+id/culture_ll">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:cropToPadding="false"
+                app:srcCompat="@drawable/culture" />
+            <TextView
+                android:layout_width="190sp"
+                android:layout_height="60dp"
+                android:text="Culture 0/2"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:fontFamily="casual"
+                android:textStyle="normal|bold"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/cultureLevel"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/categorie_bg"
+            android:id="@+id/histoire_ll">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:cropToPadding="false"
+                app:srcCompat="@drawable/histoire" />
+            <TextView
+                android:layout_width="190sp"
+                android:layout_height="60dp"
+                android:text="Histoire"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:fontFamily="casual"
+                android:textStyle="normal|bold"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/histoireLevel"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/categorie_bg"
+            android:id="@+id/geographie_ll">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:cropToPadding="false"
+                app:srcCompat="@drawable/geographie" />
+            <TextView
+                android:layout_width="190sp"
+                android:layout_height="60dp"
+                android:text="Géographie"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:fontFamily="casual"
+                android:textStyle="normal|bold"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/geoLevel"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/categorie_bg"
+            android:id="@+id/nature_ll">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:cropToPadding="false"
+                app:srcCompat="@drawable/nature" />
+            <TextView
+                android:layout_width="190sp"
+                android:layout_height="60dp"
+                android:text="Nature"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:fontFamily="casual"
+                android:textStyle="normal|bold"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/natureLevel"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

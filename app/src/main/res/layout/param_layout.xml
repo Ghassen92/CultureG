@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="25dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/backBid2"
+                android:scaleType="fitStart"
+                android:src="@drawable/backbutton"
+                android:background="@android:color/transparent"
+                android:layout_marginLeft="0dp"
+                android:padding="5dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:id="@+id/blockLinear">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Son :"
+            android:textSize="25sp"
+            android:textStyle="normal|bold"
+            android:layout_marginRight="15dp"/>
+        <CheckBox
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:id="@+id/sonCheckBox"
+           />
+    </LinearLayout>
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="Réinitialiser Tous"
+        android:id="@+id/resetB"
+        android:layout_below="@+id/blockLinear"
+        android:layout_centerInParent="true"
+        android:layout_margin="25dp"
+        android:background="@drawable/reset_img"
+        />
+
+
+</RelativeLayout>
